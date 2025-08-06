@@ -53,46 +53,49 @@
 
         </div>
 
-        <div class="w-full space-y-3">
+        <form action="../includes/sign_up.inc.php" method="post">
+            <div class="w-full space-y-3">
 
-            <!-- Username -->
+                <!-- Username -->
 
-            <div class="flex items-center px-3 py-3 rounded-md bg-white space-x-4 font-poppins w-[90%] mx-auto">
-                <img src="../Assets/user (3).png" class="w-6" />
-                <input type="text" placeholder="Username" class="outline-none w-full">
+                <div class="flex items-center px-3 py-3 rounded-md bg-white space-x-4 font-poppins w-[90%] mx-auto">
+                    <img src="../Assets/user (3).png" class="w-6" />
+                    <input name="username" type="text" placeholder="Username" class="outline-none w-full">
+                </div>
+
+                <!-- Email -->
+
+                <div class="flex items-center px-3 py-3 rounded-md bg-white space-x-4 font-poppins w-[90%] mx-auto">
+                    <img src="../Assets/mail-inbox-app.png" class="w-6" />
+                    <input name="email" type="email" placeholder="Email" class="outline-none w-full">
+                </div>
+
+                <!-- Password -->
+
+                <div class="flex items-center px-3 py-3 rounded-md bg-white space-x-4 font-poppins w-[90%] mx-auto">
+                    <img src="../Assets/padlock.png" class="w-6" />
+                    <input name="password" type="password" placeholder="Password" class="outline-none w-full">
+                </div>
+
+                <!-- Confirm Password -->
+
+                <div class="flex items-center px-3 py-3 rounded-md bg-white space-x-4 font-poppins w-[90%] mx-auto">
+                    <img src="../Assets/padlock (1).png" class="w-6" />
+                    <input name="confirmPassword" type="password" placeholder="Confirm Password" class="outline-none w-full">
+                </div>
+
             </div>
+            <br>
 
-            <!-- Email -->
-
-            <div class="flex items-center px-3 py-3 rounded-md bg-white space-x-4 font-poppins w-[90%] mx-auto">
-                <img src="../Assets/mail-inbox-app.png" class="w-6" />
-                <input type="email" placeholder="Email" class="outline-none w-full">
-            </div>
-
-            <!-- Password -->
-
-            <div class="flex items-center px-3 py-3 rounded-md bg-white space-x-4 font-poppins w-[90%] mx-auto">
-                <img src="../Assets/padlock.png" class="w-6" />
-                <input type="password" placeholder="Password" class="outline-none w-full">
-            </div>
-
-            <!-- Confirm Password -->
-
-            <div class="flex items-center px-3 py-3 rounded-md bg-white space-x-4 font-poppins w-[90%] mx-auto">
-                <img src="../Assets/padlock (1).png" class="w-6" />
-                <input type="password" placeholder="Confirm Password" class="outline-none w-full">
-            </div>
-
-        </div>
-
-        <button
-            class="group w-[90%] bg-blue-500 text-white rounded-md border border-blue-500 hover:text-black hover:bg-white hover:border-white font-poppins py-2 transition-all duration-300 ease-in-out flex items-center justify-center space-x-3">
-            <p>Sign Up</p>
-            <img class="w-6 group-hover:hidden transition-all duration-300 ease-in-out"
-                src="../Assets/log-in (1).png" />
-            <img class="w-6 hidden group-hover:block transition-all duration-300 ease-in-out"
-                src="../Assets/log-in.png" />
-        </button>
+            <button
+                class="group mx-auto w-[90%] bg-blue-500 text-white rounded-md border border-blue-500 hover:text-black hover:bg-white hover:border-white font-poppins py-2 transition-all duration-300 ease-in-out flex items-center justify-center space-x-3">
+                <p>Sign Up</p>
+                <img class="w-6 group-hover:hidden transition-all duration-300 ease-in-out"
+                    src="../Assets/log-in (1).png" />
+                <img class="w-6 hidden group-hover:block transition-all duration-300 ease-in-out"
+                    src="../Assets/log-in.png" />
+            </button>
+        </form>
 
         <!-- Devider of socials -->
 
@@ -133,7 +136,9 @@
 
         <!-- Login Rediraction starts from here -->
 
-        <div class="text-sm text-gray-700 text-center font-poppins flex space-x-1"><p>Already have an account?</p> <a href="log_in.php" class="font-bold text-black underline">Log In</a></div>
+        <div class="text-sm text-gray-700 text-center font-poppins flex space-x-1">
+            <p>Already have an account?</p> <a href="log_in.php" class="font-bold text-black underline">Log In</a>
+        </div>
 
     </div>
 </body>
